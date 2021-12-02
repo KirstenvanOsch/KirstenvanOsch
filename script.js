@@ -16,6 +16,9 @@ function flipbookFuntie() {
      }
 }
 
+function sendEmail() { 
+    window.open('mailto:Kirsten.van.osch@outlook.com'); 
+}
 
 console.log("test"); 
 
