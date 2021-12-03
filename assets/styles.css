@@ -152,7 +152,7 @@ section:first-of-type h3 {
 }
 
 section:first-of-type h4 {
-    padding: 10em 8em 0 6em;
+    padding: 15% 10% 0 15%;
     font-size: 1.125em;
 
 }
@@ -162,7 +162,7 @@ section:first-of-type h4:nth-of-type(2) {
 }
 
 section:first-of-type p {
-    padding: 1em 8em 0 6.5em;
+    padding: 15% 10% 0 15%;
     font-size: 1.125em;
 }
 
@@ -290,52 +290,59 @@ section:nth-of-type(2) h2 {
 /*Footer & Contact*/
 /****/
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 50vh;
-
 }
 
 .contact-banner-links {
-    position: relative;
-    width: 50%;
-
-    height: 100%;
-}
-
-.contact-banner-rechts {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    background-color: whitesmoke;
-
+    grid-columns: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-column: 1fr 2fr 1fr;
+    justify-items: center;
 }
 
 footer h2 {
+    grid-row: 2;
+    grid-columns: 2 / 3;
     font-family: 'Amatic SC', cursive;
     color: whitesmoke;
-
     font-size: 4rem;
     letter-spacing: 0.125em;
-    padding-left: 3em;
+    /*padding-left: 3em;
     padding-top: 5em;
-    padding-bottom: 1em;
+    padding-bottom: 1em;*/
+}
 
+.contact-banner-rechts {
+    grid-columns: 2 / 3;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: 2em 2em 5em 3em 1fr;
+    grid-template-column: 1fr 6fr 1fr;
+    justify-items: center;
+    overflow-y: auto;
 }
 
 footer h3 {
-    padding: 3em 0.5em 0 2em;
-    font-size: 2rem;
+    grid-columns: 2 / 3;
+    grid-row: 4;
+    /*padding: 3em 0.5em 0 2em;
+    font-size: 2rem;*/
 }
 
 footer p {
-    padding: 1em 15em 0 4em;
-    font-size: 1rem;
+    grid-columns: 2 / 3;
+    grid-row: 2;
+    /*padding: 1em 15em 0 4em;
+    font-size: 1rem;*/
 
 }
 
 footer p:last-of-type {
+    grid-columns: 2 / 3;
+    grid-row: 5;
     font-weight: bold;
     padding: 3em 0.5em 0 5em;
 }
@@ -343,12 +350,16 @@ footer p:last-of-type {
 
 
 footer ul {
-    display: flex;
-    gap: 0.225em;
-    padding: 1em 0.5em 0 5em;
+    grid-columns: 2 / 3;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.225em;
+    justify-items: center;
 }
 
 footer li {
+    display: grid;
     list-style: none;
 }
 
