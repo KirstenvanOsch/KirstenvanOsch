@@ -2,7 +2,7 @@ console.log("portfolio");
 
 var flipbookTekst =document.querySelector(".container-flipbook"); 
 var counter = 0;  
-var tekst = ["Techno liefhebber 🎵", "Hondenvriend 🐕", "Fantasy nerd 📚", "Bordspelletjesfanaat🎲", "Keukenprinses 🎂", "Theatermeisje 🎭"]; 
+var tekst = ["Techno liefhebber 🎵", "Hondenvriend 🐕", "Fantasy nerd 📚", "Bordspelletjesfanaat 🎲", "Keukenprinses 🎂", "Theatermeisje 🎭"]; 
 var inst = setInterval(flipbookFuntie, 2000); 
 
 
