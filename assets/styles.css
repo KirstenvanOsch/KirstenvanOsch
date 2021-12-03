@@ -114,7 +114,10 @@ section:first-of-type {
     overflow-y: scroll;
     overflow-x: hidden;
 
+}
 
+.about-banner-rechts::-webkit-scrollbar {
+    display: none;
 }
 
 .about-banner-rechts::webkit-scrollbar {
@@ -227,19 +230,20 @@ section:nth-of-type(2) {
 }
 
 .back p {
-
-    padding-left: 4em;
-    padding-right: 10em;
+    padding-left: 3em;
+    padding-right: 3em;
     padding-bottom: 2em;
 
 }
 
 .back h3 {
-    padding: 3em 10em 1.5em 4em;
+    place-items: center;
+    padding-top: 1em;
+    padding-bottom: 0.125em;
 }
 
 .back a {
-    padding: 2em 10em 3em 4em;
+    align-items: center;
     text-decoration: none;
     color: var(--softPink);
     font-size: 1.125em;
